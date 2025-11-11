@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Moja stránka s pozadím</title>
 <style>
-/* základné resetovanie */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* celá obrazovka s pozadím */
+
 body {
 min-height: 100vh;
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 color: #fff;
-/* C:\Users\žiak 02\Desktop\www\image.webp */
+/* image.webp */
 background-image: url('image.webp');
 background-size: cover;
 background-position: center;
@@ -22,15 +22,15 @@ display: grid;
 place-items: center;
 }
 
-/* tmavý overlay, aby bol nadpis čitateľný */
+
 .overlay {
 position: absolute;
 inset: 0;
-background: rgba(0,0,0,0.45); /* uprav priehľadnosť podľa potreby */
+background: rgba(0,0,0,0.45); 
 z-index: 0;
 }
 
-/* obsah nad overlayom */
+
 .content {
 position: relative;
 z-index: 1;
@@ -52,7 +52,7 @@ font-size: clamp(1rem, 2.2vw, 1.25rem);
 opacity: 0.9;
 }
 
-/* drobné zlepšenia pre čitateľnosť na mobiloch */
+
 @media (max-width: 520px) {
 .content { padding: 2rem 1rem; }
 }
